@@ -1,0 +1,33 @@
+{
+  "name": "test-5-nuxt-spa",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "db": "json-server --watch db.json --port 4000"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "ant-design-vue": "^1.7.8",
+    "core-js": "^3.19.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "eslint": "^8.23.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "json-server": "^0.17.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.1.0",
+    "stylus": "^0.59.0",
+    "stylus-loader": "4.3.3"
+  }
+}
