@@ -9,7 +9,6 @@
       )
         td(v-for='(c,irow) of row')
           slot(:name='irow' :dt='c')
-
 </template>
 
 <script>
@@ -52,37 +51,6 @@ td, th
   border 1px solid #ccc
   text-align left
   font-size 18px
-
-table, thead, tbody, th, td, tr
-  display block
-
-thead tr
-  position absolute
-  top -9999px
-  left -9999px
-
-
-tr
-  border 1px solid #ccc
-
-
-td
-  border none
-  border-bottom 1px solid #eee
-  position relative
-  padding-left 50%
-
-
-tdbefore
-  position absolute
-  top 6px
-  left 6px
-  width 45%
-  padding-right 10px
-  white-space nowrap
-  content attr(data-column)
-  color #000
-  font-weight bold
 
 </style>
 

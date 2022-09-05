@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
-    "eslint": "^8.23.0",
+    "eslint": "8.22.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "json-server": "^0.17.0",
     "pug": "^3.0.2",

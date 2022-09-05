@@ -17,6 +17,7 @@
       template(#image='props')
         div(class='img-div')
           img(:src='props.dt' class='card-img')
+
 </template>
 
 <script>
@@ -83,6 +84,8 @@ export default {
   },
   components: {
     TTable,
+
+
   },
 }
 </script>
