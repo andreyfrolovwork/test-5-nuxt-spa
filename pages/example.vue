@@ -1,5 +1,5 @@
 <template lang='pug'>
-  div 123
+  div
     h1 example.vue
     ListParent(:collection='arr')
       Child
@@ -43,13 +43,10 @@ export default {
 .red {
   color: red
 }
-
 .blue {
   color: blue
 }
-
 .green {
   color: green
 }
-
 </style>

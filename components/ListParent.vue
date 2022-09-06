@@ -5,36 +5,20 @@ export default {
   props: {
     collection: {},
   },
-  render(createElement, context) {
-    debugger
-  }
-  /*render(createElement) {
-    let it = makeIterator(this.collection.length)
+  render(createElement) {
+    //let it = makeIterator(this.collection.length)
     return createElement('div', [
       ...this.collection.map((el, i) => {
-
-        /!*if (el.color === 'red') {
-          return createElement('div', [this.$slots.default[0]])
-        }
-        if (el.color === 'blue') {
-          return createElement('div', [this.$slots.default[1]])
-        }
-        if (el.color === 'green') {
-          return createElement('div', [this.$slots.default[2]])
-        }*!/
-        //debugger
-        //console.log('next',it.next().value)
-        debugger
-        this.$slots.default[0].componentOptions.children[0].children[0].text
-        this.$slots.default[1].componentOptions.it = it
-        this.$slots.default[1].componentOptions.index = i
+        // перебирая коллекцию я хочу установить значение из коллекци в div(class='red')
+        // который был передан в качестве слота в компонента Child
+        // Однако из за того, что работа происходит с ссылками в итоге на каждоой итерации
+        // изменяется значение text у div и в итоге остается значение из последней итерации
+        //
+        this.$slots.default[0].componentOptions.children[0].children[0].text = el.value
         return createElement('div', [this.$slots.default[0]])
       }),
     ])
-  },*/
-  /* render(){
-     return <div>{this.$slots.default}</div>
-   }*/
+  },
 }
 </script>
 
