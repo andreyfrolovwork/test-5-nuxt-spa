@@ -5,12 +5,15 @@ export default {
   props: {
     collection: {},
   },
-  render(createElement) {
+  render(createElement, context) {
+    debugger
+  }
+  /*render(createElement) {
     let it = makeIterator(this.collection.length)
-
     return createElement('div', [
       ...this.collection.map((el, i) => {
-        /*if (el.color === 'red') {
+
+        /!*if (el.color === 'red') {
           return createElement('div', [this.$slots.default[0]])
         }
         if (el.color === 'blue') {
@@ -18,14 +21,17 @@ export default {
         }
         if (el.color === 'green') {
           return createElement('div', [this.$slots.default[2]])
-        }*/
+        }*!/
         //debugger
         //console.log('next',it.next().value)
+        debugger
+        this.$slots.default[0].componentOptions.children[0].children[0].text
         this.$slots.default[1].componentOptions.it = it
-        return createElement('div', [this.$slots.default[1]])
+        this.$slots.default[1].componentOptions.index = i
+        return createElement('div', [this.$slots.default[0]])
       }),
     ])
-  },
+  },*/
   /* render(){
      return <div>{this.$slots.default}</div>
    }*/

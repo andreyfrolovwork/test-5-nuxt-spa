@@ -4,7 +4,7 @@ function makeIterator(len){
   for(let i = 0; i < len; i++){
     array.push(i)
   }
-  debugger
+  //debugger
   let nextIndex = 0;
 
   return {

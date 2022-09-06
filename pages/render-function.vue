@@ -3,7 +3,7 @@
     RenderFuncComponent(:collection='collection' text='testText')
       TableColumnComponent(field='name')
         template(#cusname='props')
-          CustomCell(:text='123')
+          CustomCell(:text='props.text')
         template
           div custom div
       TableColumnComponent(field='job' label='Работа')
